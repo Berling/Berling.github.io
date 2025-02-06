@@ -7,9 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
+    <nav class="topnav">
+        <a href="#" class="icon" onclick="toggleMenu();">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div id="links">
+            <div></div>
+            <a href="#home" onclick="closeMenu();">Home</a>
+            <a href="#about" onclick="closeMenu();">About</a>
+            <a href="#events" onclick="closeMenu();">Events</a>
+            <a href="#graveyard" onclick="closeMenu();">Graveyard</a>
+            <a href="#donations" onclick="closeMenu();">Donations</a>
+        </div>
+    </nav>
+
     <section id="home">
         <div class="background-image-wrapper">
             <div class="background-image"></div>

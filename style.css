@@ -5,7 +5,7 @@ html {
 }
 
 section {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     text-align: center;
 }
@@ -23,10 +23,51 @@ h2 {
     font-size: 4vh;
 }
 
+a {
+    font-size: 2vh;
+}
+
 hr {
     width: 4vh;
     height: 0.5vh;
     border: none;
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    height: 100%;
+    z-index: 2;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 4vh;
+    top: 4vh;
+    font-size: 2.5vh;
+}
+
+.topnav #links {
+    display: none;
+    background-color: grey;
+    height: 100%;
+}
+
+.topnav #links div {
+    padding-top: 8vh;
+}
+
+.topnav #links a {
+    padding: 0.5vh 8vh 0.5vh 8vh;
 }
 
 .background-image-wrapper {
