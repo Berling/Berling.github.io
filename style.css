@@ -6,6 +6,27 @@ html {
 
 section {
     height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+h2,
+a,
+p {
+    font-family: "Caprasimo", serif;
+}
+
+h2 {
+    margin: 0;
+    padding: 8vw 0 0 0;
+    text-transform: uppercase;
+    font-size: 4vw;
+}
+
+hr {
+    width: 4vw;
+    height: 0.5vw;
+    border: none;
 }
 
 .background-image-wrapper {
@@ -38,16 +59,36 @@ section {
 
 #about {
     background-color: white;
+    color: #c83535;
+}
+
+#about hr {
+    background-color: #c83535;
 }
 
 #events {
     background-color: #c83535;
+    color: white;
+}
+
+#events hr {
+    background-color: white;
 }
 
 #graveyard {
     background-color: white;
+    color: #c83535;
+}
+
+#graveyard hr {
+    background-color: #c83535;
 }
 
 #donations {
     background-color: #c83535;
+    color: white;
+}
+
+#donations hr {
+    background-color: white;
 }
