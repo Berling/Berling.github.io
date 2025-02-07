@@ -2,6 +2,7 @@ body,
 html {
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -150,12 +151,12 @@ hr {
     background-color: white;
 }
 
-#graveyard {
+#bands {
     background-color: white;
     color: #c83535;
 }
 
-#graveyard hr {
+#bands hr {
     background-color: #c83535;
 }
 

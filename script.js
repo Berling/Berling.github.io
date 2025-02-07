@@ -17,6 +17,7 @@ function toggleMenu() {
 }
 
 function closeMenu() {
+    document.body.style.overflow = "unset";
     document.getElementById("menu").style.display = "none";
     document.getElementById("modal").style.display = "none";
 }
