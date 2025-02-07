@@ -3,8 +3,8 @@ function preventDefault(e) {
 }
 
 function toggleMenu() {
-    var menu = document.getElementById("menu");
-    var modal = document.getElementById("modal");
+    let menu = document.getElementById("menu");
+    let modal = document.getElementById("modal");
     if (menu.style.display === "block") {
         document.body.style.overflow = "unset";
         menu.style.display = "none";
@@ -21,3 +21,16 @@ function closeMenu() {
     document.getElementById("menu").style.display = "none";
     document.getElementById("modal").style.display = "none";
 }
+
+async function listBands() {
+    let response = await fetch("content/bands");
+    if (response.status != 200) {
+        return;
+    }
+
+    let text = await response.text();
+    let bands = text.split("\n").sort().join(" | ");
+    document.getElementById("band-list").textContent = bands;
+}
+
+listBands();

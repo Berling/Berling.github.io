@@ -12,6 +12,7 @@ section {
 }
 
 h2,
+h3,
 a,
 p {
     font-family: "Caprasimo", serif;
@@ -24,8 +25,17 @@ h2 {
     font-size: 4vh;
 }
 
+h3 {
+    font-size: 3vh;
+}
+
 a {
     font-size: 2vh;
+}
+
+p {
+    font-size: 2vh;
+    line-height: 1.5;
 }
 
 hr {
@@ -158,6 +168,10 @@ hr {
 
 #bands hr {
     background-color: #c83535;
+}
+
+#band-list {
+    margin: 0 8vw;
 }
 
 #donations {
