@@ -1,12 +1,12 @@
 function toggleMenu() {
-    var links = document.getElementById("links");
-    if (links.style.display === "block") {
-        links.style.display = "none";
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
     } else {
-        links.style.display = "block";
+        menu.style.display = "block";
     }
 }
 
 function closeMenu() {
-    document.getElementById("links").style.display = "none";
+    document.getElementById("menu").style.display = "none";
 }
