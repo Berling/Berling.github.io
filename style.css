@@ -164,6 +164,10 @@ hr {
     background-color: #c83535;
 }
 
+#description {
+    margin: 0 8vw 8vw 8vw;
+}
+
 #events {
     background-color: #c83535;
     color: white;
