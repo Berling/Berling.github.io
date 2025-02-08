@@ -16,7 +16,8 @@ section {
 h2,
 h3,
 a,
-p {
+p,
+li {
     font-family: "Caprasimo", serif;
 }
 
@@ -35,7 +36,8 @@ a {
     font-size: 2vh;
 }
 
-p {
+p,
+li {
     font-size: 2vh;
     line-height: 1.5;
 }
@@ -191,4 +193,8 @@ hr {
 
 #donations hr {
     background-color: white;
+}
+
+.donation-entry {
+    list-style: none;
 }

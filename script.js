@@ -33,4 +33,21 @@ async function listBands() {
     document.getElementById("band-list").textContent = bands;
 }
 
+async function listDonations() {
+    let response = await fetch("content/donations");
+    if (response.status != 200) {
+        return;
+    }
+
+    let text = await response.text();
+    let donations = text.split("\n");
+    let donationList = document.getElementById("donation-list");
+    donations.forEach(donation => {
+        let donationEntry = donationList.appendChild(document.createElement("li"));
+        donationEntry.classList += "donation-entry";
+        donationEntry.textContent = donation;
+    });
+}
+
 listBands();
+listDonations();
