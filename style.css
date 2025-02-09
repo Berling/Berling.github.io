@@ -114,7 +114,11 @@ hr {
     display: flex;
     justify-content: center;
     justify-items: center;
-    padding-top: 50px;
+    padding: 20px;
+}
+
+.social-media a {
+    color: black;
 }
 
 .social-media i {
@@ -197,4 +201,23 @@ hr {
 
 .donation-entry {
     list-style: none;
+}
+
+#footer {
+    background-color: black;
+    padding: 20px;
+}
+
+#footer p {
+    color: white;
+    font-size: unset;
+    text-align: center;
+}
+
+#footer a {
+    display: block;
+    color: gray;
+    font-size: unset;
+    text-align: center;
+    text-decoration: none;
 }
