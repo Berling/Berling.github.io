@@ -52,7 +52,7 @@ hr {
     display: flex;
     flex-direction: column;
     flex: auto;
-    justify-content: center;
+    margin: 0 8vw 8vw 8vw;
 }
 
 .topnav {
@@ -164,10 +164,6 @@ hr {
     background-color: #c83535;
 }
 
-#description {
-    margin: 0 8vw 8vw 8vw;
-}
-
 #events {
     background-color: #c83535;
     color: white;
@@ -186,10 +182,6 @@ hr {
     background-color: #c83535;
 }
 
-#band-list {
-    margin: 0 8vw 8vw 8vw;
-}
-
 #donations {
     background-color: #c83535;
     color: white;
@@ -197,6 +189,10 @@ hr {
 
 #donations hr {
     background-color: white;
+}
+
+#donation-list {
+    padding: 0;
 }
 
 .donation-entry {
