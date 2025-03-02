@@ -177,6 +177,27 @@ hr {
     background-color: white;
 }
 
+#events a {
+    text-decoration: none;
+    color: white;
+}
+
+#upcoming-list {
+    padding: 0;
+}
+
+.upcoming-entry {
+    list-style: none;
+}
+
+#past-list {
+    padding: 0;
+}
+
+.past-entry {
+    list-style: none;
+}
+
 #bands {
     background-color: white;
     color: #c83535;
