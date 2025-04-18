@@ -41,7 +41,7 @@ export default await defineComponent(
                 upcomingList.appendChild(document.createElement("li")).textContent = "- Nix los -";
             }
 
-            let pastEvents = events.filter((event) => event.date < today);
+            let pastEvents = events.filter((event) => event.date < today).slice(0, 5);
             let pastList = this.shadowRoot.getElementById("past");
             pastEvents.forEach(event => {
                 let pastEntry = pastList.appendChild(document.createElement("li"));
