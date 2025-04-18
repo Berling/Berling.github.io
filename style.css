@@ -38,3 +38,7 @@ section {
 #home {
     display: inherit;
 }
+
+h2 {
+    margin-bottom: 0;
+}
