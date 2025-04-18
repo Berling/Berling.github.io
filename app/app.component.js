@@ -1,4 +1,6 @@
 import defineComponent from "../component.js";
+import HomeSection from "./home-section/home-section.component.js"
+import ContentSection from "./content-section/content-section.component.js"
 
 export default await defineComponent(
     "app-root",
