@@ -1,7 +1,12 @@
+@font-face {
+    font-family: Caprasimo;
+    src: url("./font/Caprasimo/Caprasimo-Regular.ttf");
+}
+
 body,
 html {
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
-    font-family: "Caprasimo", serif;
+    font-family: Caprasimo;
 }
