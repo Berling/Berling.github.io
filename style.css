@@ -10,3 +10,19 @@ html {
     scroll-behavior: smooth;
     font-family: Caprasimo;
 }
+
+@media screen and (max-width: 600px) {
+
+    body,
+    html {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+
+    body,
+    html {
+        font-size: 24px;
+    }
+}
