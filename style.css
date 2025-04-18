@@ -25,6 +25,7 @@ html {
     margin: 0;
     scroll-behavior: smooth;
     font-family: Caprasimo;
+    line-height: 1.5;
 }
 
 section {
