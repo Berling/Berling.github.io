@@ -33,16 +33,18 @@ export default await defineComponent(
             let upcomingList = this.shadowRoot.getElementById("upcoming");
             upcomingEvents.forEach(event => {
                 let upcomingEntry = upcomingList.appendChild(document.createElement("li"));
-                upcomingEntry.classList += "upcoming-entry";
                 let content = upcomingEntry.appendChild(document.createElement("a"));
                 content.href = "https://www.facebook.com/events/" + event.eventId;
                 content.textContent = event.date.toLocaleDateString() + " - " + event.bands;
             });
+            if (upcomingEvents.length == 0) {
+                upcomingList.appendChild(document.createElement("li")).textContent = "- Nix los -";
+            }
+
             let pastEvents = events.filter((event) => event.date < today);
             let pastList = this.shadowRoot.getElementById("past");
             pastEvents.forEach(event => {
                 let pastEntry = pastList.appendChild(document.createElement("li"));
-                pastEntry.classList += "past-entry";
                 let content = pastEntry.appendChild(document.createElement("a"));
                 content.href = "https://www.facebook.com/events/" + event.eventId;
                 content.textContent = event.date.toLocaleDateString() + " - " + event.bands;
