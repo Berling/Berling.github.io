@@ -11,6 +11,10 @@ html {
     font-family: Caprasimo;
 }
 
+section {
+    height: 100%;
+}
+
 @media screen and (max-width: 600px) {
 
     body,
