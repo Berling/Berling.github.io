@@ -1,0 +1,11 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: "Caprasimo", serif;
+}
+
+section {
+    height: 100%;
+}
