@@ -1,0 +1,15 @@
+div {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 1em;
+}
+
+a {
+    color: black;
+}
+
+i {
+    padding: 0.5em;
+}
