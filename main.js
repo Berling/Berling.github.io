@@ -1,4 +1,5 @@
 import App from "./app/app.component.js"
+import TopNav from "./app/top-nav/top-nav.component.js"
 import SocialMediaList from "./app/social-media-list/social-media-list.component.js"
 import HomeSection from "./app/home-section/home-section.component.js"
 import ContentSection from "./app/content-section/content-section.component.js"

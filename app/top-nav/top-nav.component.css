@@ -1,0 +1,8 @@
+#burger {
+    position: fixed;
+    top: 1.5em;
+    right: 1.5em;
+    z-index: 2000;
+    font-size: 1.5em;
+    color: #3535C8;
+}
