@@ -24,23 +24,29 @@ export default await defineComponent(
         }
 
         toggleMenu() {
+            if (this.open) {
+                this.closeMenu()
+            } else {
+                this.openMenu();
+            }
+        }
+
+        openMenu() {
+            const menuContainer = this.shadowRoot.getElementById("menu-container");
             const menu = this.shadowRoot.getElementById("menu");
             const modal = this.shadowRoot.getElementById("modal");
-            if (this.open) {
-                menu.classList.remove("open");
-                modal.classList.remove("active");
-                document.body.style.overflow = "unset";
-            } else {
-                menu.classList.add("open");
-                modal.classList.add("active");
-                document.body.style.overflow = "hidden";
-            }
-            this.open = !this.open;
+            menuContainer.classList.add("open");
+            menu.classList.add("open");
+            modal.classList.add("active");
+            document.body.style.overflow = "hidden";
+            this.open = true;
         }
 
         closeMenu() {
+            const menuContainer = this.shadowRoot.getElementById("menu-container");
             const menu = this.shadowRoot.getElementById("menu");
             const modal = this.shadowRoot.getElementById("modal");
+            menuContainer.classList.remove("open");
             menu.classList.remove("open");
             modal.classList.remove("active");
             document.body.style.overflow = "unset";
