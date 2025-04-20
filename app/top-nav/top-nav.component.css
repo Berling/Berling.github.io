@@ -36,8 +36,8 @@
 
 #burger {
     position: absolute;
-    top: 1.5em;
-    right: 1.5em;
+    top: 1em;
+    right: 1em;
     font-size: 1.5em;
     z-index: 2000;
     color: #3535C8;
@@ -60,7 +60,7 @@
 img {
     width: 10em;
     height: 10em;
-    margin: 2.5em auto 0em auto;
+    margin: 1.75em auto 0em auto;
 }
 
 #links {
