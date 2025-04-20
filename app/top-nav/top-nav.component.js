@@ -13,15 +13,26 @@ export default await defineComponent(
 
         connectedCallback() {
             const burger = this.shadowRoot.getElementById("burger");
-            const menu = this.shadowRoot.getElementById("menu");
+            burger.onclick = () => this.toggleMenu();
 
-            burger.onclick = () => {
-                if (this.open) {
-                    menu.classList.remove("open");
-                } else {
-                    menu.classList.add("open");
-                }
-                this.open = !this.open;
+            this.shadowRoot.querySelectorAll("#links>a").forEach(link => {
+                link.onclick = () => this.closeMenu();
+            });
+        }
+
+        toggleMenu() {
+            const menu = this.shadowRoot.getElementById("menu");
+            if (this.open) {
+                menu.classList.remove("open");
+            } else {
+                menu.classList.add("open");
             }
+            this.open = !this.open;
+        }
+
+        closeMenu() {
+            const menu = this.shadowRoot.getElementById("menu");
+            menu.classList.remove("open");
+            this.open = false;
         }
     });
