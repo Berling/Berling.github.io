@@ -35,6 +35,7 @@ export default await defineComponent(
                 let upcomingEntry = upcomingList.appendChild(document.createElement("li"));
                 let content = upcomingEntry.appendChild(document.createElement("a"));
                 content.href = "https://www.facebook.com/events/" + event.eventId;
+                content.target = "_blank";
                 content.textContent = event.date.toLocaleDateString() + " - " + event.bands;
             });
             if (upcomingEvents.length == 0) {
@@ -47,6 +48,7 @@ export default await defineComponent(
                 let pastEntry = pastList.appendChild(document.createElement("li"));
                 let content = pastEntry.appendChild(document.createElement("a"));
                 content.href = "https://www.facebook.com/events/" + event.eventId;
+                content.target = "_blank";
                 content.textContent = event.date.toLocaleDateString() + " - " + event.bands;
             });
         }
