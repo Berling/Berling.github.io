@@ -1,8 +1,18 @@
+@keyframes menu-fly-in {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
 #menu-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    z-index: 2000;
+    z-index: 1999;
     height: 100%;
     overflow-y: auto;
     background-color: transparent;
@@ -13,6 +23,7 @@
     top: 1.5em;
     right: 1.5em;
     font-size: 1.5em;
+    z-index: 2000;
     color: #3535C8;
 }
 
@@ -21,6 +32,12 @@
     min-width: 16em;
     background-color: white;
     text-align: center;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+#menu.open {
+    transform: translateX(0%);
 }
 
 img {
