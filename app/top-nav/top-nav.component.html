@@ -1,17 +1,19 @@
 <template>
     <link rel="stylesheet" href="./fonts/fontawesome/css/all.css">
-    <a id="burger" href="javascript:void(0);">
-        <i class="fa fa-bars"></i>
-    </a>
-    <div id="menu">
-        <img src="images/logo.svg">
-        <div id="links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#events">Events</a>
-            <a href="#bands">Bands</a>
-            <a href="#donations">Spenden</a>
+    <div id="menu-container">
+        <a id="burger" href="javascript:void(0);">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div id="menu">
+            <img src="images/logo.svg">
+            <div id="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#events">Events</a>
+                <a href="#bands">Bands</a>
+                <a href="#donations">Spenden</a>
+            </div>
+            <social-media-list></social-media-list>
         </div>
-        <social-media-list></social-media-list>
     </div>
 </template>
