@@ -1,3 +1,19 @@
+@media screen and (max-width: 600px) {
+
+    #background-image {
+        filter: grayscale(1) blur(4px);
+        -webkit-filter: grayscale(1) blur(4px);
+    }
+}
+
+@media screen and (min-width: 601px) {
+
+    #background-image {
+        filter: grayscale(1) blur(8px);
+        -webkit-filter: grayscale(1) blur(8px);
+    }
+}
+
 #wrapper {
     background-color: black;
     height: 100%;
@@ -6,8 +22,6 @@
 
 #background-image {
     background-image: url("images/background.jpg");
-    filter: grayscale(1) blur(0.35em);
-    -webkit-filter: grayscale(1) blur(0.35em);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
