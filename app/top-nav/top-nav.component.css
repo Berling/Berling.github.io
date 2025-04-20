@@ -1,13 +1,3 @@
-@keyframes menu-fly-in {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(0%);
-    }
-}
-
 #menu-container {
     position: fixed;
     top: 0;
@@ -16,6 +6,21 @@
     height: 100%;
     overflow-y: auto;
     background-color: transparent;
+}
+
+#modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000%;
+    z-index: 1998;
+}
+
+#modal.active {
+    display: block;
 }
 
 #burger {
