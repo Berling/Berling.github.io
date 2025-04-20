@@ -6,10 +6,15 @@
     height: 100%;
     overflow: hidden;
     background-color: transparent;
+    transition: background-color 0s 0s;
+    pointer-events: none;
 }
 
 #menu-container.open {
     overflow-y: auto;
+    background-color: white;
+    transition: background-color 0s 0.5s;
+    pointer-events: inherit;
 }
 
 #modal {
@@ -34,6 +39,7 @@
     font-size: 1.5em;
     z-index: 2000;
     color: #3535C8;
+    pointer-events: initial;
 }
 
 #menu {
