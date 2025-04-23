@@ -6,8 +6,17 @@ div {
     padding: 1em;
 }
 
+div.alt {
+    background-color: #c83535;
+    color: white;
+}
+
 a {
     color: black;
+}
+
+div.alt>a {
+    color: white;
 }
 
 i {

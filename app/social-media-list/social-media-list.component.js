@@ -8,4 +8,13 @@ export default await defineComponent(
         constructor() {
             super();
         }
+
+        connectedCallback() {
+            const content = this.shadowRoot.getElementById("content");
+            if (this.hasAttribute("alt")) {
+                content.classList.add("alt");
+            } else {
+                content.classList.remove("alt");
+            }
+        }
     });
