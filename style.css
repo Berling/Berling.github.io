@@ -19,10 +19,6 @@
     }
 }
 
-* {
-    hyphens: auto;
-}
-
 body,
 html {
     height: 100%;

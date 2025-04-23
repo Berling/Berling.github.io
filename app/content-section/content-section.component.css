@@ -1,6 +1,7 @@
 h2 {
     margin-bottom: 0;
     text-transform: uppercase;
+    hyphens: auto;
 }
 
 hr {
