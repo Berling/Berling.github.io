@@ -1,0 +1,20 @@
+a {
+    color: inherit;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100vh;
+}
+
+.flex-container>div {
+    flex-grow: 1;
+    justify-content: center;
+}
