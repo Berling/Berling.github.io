@@ -4,4 +4,5 @@ p {
 
 a {
     color: inherit;
+    word-break: break-all;
 }

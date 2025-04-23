@@ -2,6 +2,24 @@
     text-align: left;
 }
 
+h3,
+h4,
+h5 {
+    hyphens: auto;
+}
+
+p {
+    hyphens: auto;
+}
+
+ol {
+    hyphens: auto;
+}
+
+li {
+    hyphens: auto;
+}
+
 a {
     color: inherit;
 }
