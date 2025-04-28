@@ -14,11 +14,14 @@ import GdprSection from "./app/gdpr-section/gdpr-section.component.js"
 
 async function waitForAllComponents() {
     document.body.hidden = true;
+    const hash = location.hash;
+    location.hash = "";
     return Promise.all(
         [...document.querySelectorAll(":not(:defined)")]
             .map(el => customElements.whenDefined(el.localName))
     ).then(() => {
         document.body.hidden = false;
+        location.hash = hash;
     });
 }
 
