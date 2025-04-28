@@ -11,3 +11,15 @@ import ContactSection from "./app/contact-section/contact-section.component.js"
 import BottomNav from "./app/bottom-nav/bottom-nav.component.js"
 import ImprintSection from "./app/imprint-section/imprint-section.component.js"
 import GdprSection from "./app/gdpr-section/gdpr-section.component.js"
+
+async function waitForAllComponents() {
+    document.body.hidden = true;
+    return Promise.all(
+        [...document.querySelectorAll(":not(:defined)")]
+            .map(el => customElements.whenDefined(el.localName))
+    ).then(() => {
+        document.body.hidden = false;
+    });
+}
+
+export default await waitForAllComponents();
